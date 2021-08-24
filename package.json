@@ -8,6 +8,7 @@
   },
   "keywords": [],
   "author": "",
+  "engines" : {"node" : "16.6.1"},
   "license": "ISC",
   "repository": {
     "type": "git",

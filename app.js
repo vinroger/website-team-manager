@@ -21,6 +21,10 @@ let Feedback = mongoose.model("feedback", feedbackSchema );
 let db1 = process.env.DB1;
 mongoose.connect(db1, {useNewUrlParser: true, useUnifiedTopology: true});
 
+let port = process.env.PORT;
+if(port == null || port == ''){
+    port = 3000;
+}
 
 app.get("/", function(req,res){
     res.render("index");
