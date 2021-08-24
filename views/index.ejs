@@ -1,110 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>TeamManager | Discord Bot</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-  </head>
-  <body>
-    <!-- Start your project here-->
-      <!--Main Navigation-->
-  <header>
-    <style>
-      /* Carousel styling */
-      body{
-        background-color : black;
-        color:#fff;
-        font-family : 'Montserrat';
-      }
-      #introCarousel,
-      .carousel-inner,
-      .carousel-item,
-      .carousel-item.active {
-        height: 100vh;
-      }
+<%- include('partials/header') %>
 
-      .carousel-item:nth-child(1) {
-        background-image: url('./img/valo2.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      .carousel-item:nth-child(2) {
-        background-image: url('./img/dota.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      .carousel-item:nth-child(3) {
-        background-image: url('./img/csgo.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-      .carousel-item:nth-child(4) {
-        background-image: url('./img/apex.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-      .mask-custom {
-      backdrop-filter: blur(1px);
-      background-color: rgba(255, 255, 255, 0.4);
-      }
-
-      /* Height for devices larger than 576px */
-      @media (min-width: 992px) {
-        #introCarousel {
-          margin-top: -58.59px;
-        }
-      }
-
-      .navbar .nav-link {
-        color: #fff !important;
-      }
-    </style>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top pb-2" style="z-index: 2000; background-color: black; position: fixed">
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand nav-link mt-2" target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=877212929504722975&permissions=8&scope=bot">
-          <h2 style="margin-left : 5vw"><strong>TeamManager</strong></h2>
-        </a>
-        <button class="navbar-toggler"style="margin-right : 5vw" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarExample01">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-5 mt-3 me-5" style="margin-right : 5vw" >
-            <li class="nav-item active">
-              <a class="nav-link px-5" href="#intro"><h4>Home</h4></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-5" href="https://discord.com/api/oauth2/authorize?client_id=877212929504722975&permissions=8&scope=bot" rel="nofollow" target="_blank"><h4>Invite to Server</h4></a>
-            </li>
-            <li class="nav-item" >
-              <a class="nav-link px-5" href="#intro" target="_blank"><h4>Feedback</h4></a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar -->
-  </header>
     <!-- Carousel wrapper -->
     <div id="intro" class="carousel slide carousel-fade shadow-2-strong" data-mdb-interval="3000" data-mdb-ride="carousel" data-mdb-pause="false">
       <!-- Inner -->
@@ -114,7 +9,7 @@
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-white text-center">
-                <img src="./img/jett.jpg" class = "rounded-circle m-4" style="width : 25%; opacity: 1;" alt="">
+                <img src="img/jett.jpg" class = "rounded-circle m-4" style="width : 25%; opacity: 1;" alt="">
                 <h1 class="mb-3">Manage your team.</h1>
                 <h5 class="mb-4">Say no more to disorganized lobby. Plan your events flawlessly.</h5>
                 <a class="btn btn-outline-light btn-lg m-2" href="https://discord.com/api/oauth2/authorize?client_id=877212929504722975&permissions=8&scope=bot"
@@ -129,7 +24,7 @@
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-white text-center">
-                <img src="./img/jett.jpg" class = "rounded-circle m-4" style="width : 25%; opacity: 1;" alt="">
+                <img src="img/jett.jpg" class = "rounded-circle m-4" style="width : 25%; opacity: 1;" alt="">
                 <h1 class="mb-3">Manage your team.</h1>
                 <h5 class="mb-4">Say no more to disorganized lobby. Plan your events flawlessly.</h5>
                 <a class="btn btn-outline-light btn-lg m-2" href="https://discord.com/api/oauth2/authorize?client_id=877212929504722975&permissions=8&scope=bot"
@@ -143,7 +38,7 @@
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-white text-center">
-                <img src="./img/jett.jpg" class = "rounded-circle m-4" style="width : 25%; opacity: 1;" alt="">
+                <img src="img/jett.jpg" class = "rounded-circle m-4" style="width : 25%; opacity: 1;" alt="">
                 <h1 class="mb-3">Manage your team.</h1>
                 <h5 class="mb-4">Say no more to disorganized lobby. Plan your events flawlessly.</h5>
                 <a class="btn btn-outline-light btn-lg m-2" href="https://discord.com/api/oauth2/authorize?client_id=877212929504722975&permissions=8&scope=bot"
@@ -158,7 +53,7 @@
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-white text-center">
-                <img src="./img/jett.jpg" class = "rounded-circle m-4" style="width : 25%; opacity: 1;" alt="">
+                <img src="img/jett.jpg" class = "rounded-circle m-4" style="width : 25%; opacity: 1;" alt="">
                 <h1 class="mb-3">Manage your team.</h1>
                 <h5 class="mb-4">Say no more to disorganized lobby. Plan your events flawlessly.</h5>
                 <a class="btn btn-outline-light btn-lg m-2" href="https://discord.com/api/oauth2/authorize?client_id=877212929504722975&permissions=8&scope=bot"
@@ -313,30 +208,4 @@
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class=" text-lg-start">
-
-    <h5 class=" d-flex justify-content-center mt-3">Start to create teams !</h5>
-    <div class="mb-5 pb-5 d-flex justify-content-center">
-      <a class="btn btn-outline-light btn-lg m-2 text-center" href="https://discord.com/api/oauth2/authorize?client_id=877212929504722975&permissions=8&scope=bot" role="button" rel="nofollow" target="_blank">Invite to your server</a>
-    </div>
-    <br>
-    
-    
-    
-
-    <!-- Copyright -->
-    <div class="text-center pb-2 pt-4" style="background-color: rgb(20, 20, 20);">
-      <p style="font-size: 0.9rem; opacity: 0.3;">© 2021 Copyright KucingKuah</p>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!--Footer-->
-    <!-- End your project here-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript"></script>
-    
-  </body>
-</html>
+  <%- include('partials/footer') %>

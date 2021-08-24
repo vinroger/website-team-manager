@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+<br>
+<br>
+<br>
+<br>
+<form style="margin: 7rem 0 10rem 0;" method="post" action="/feedback">
+    <div class="col-md-4 centered ms-auto me-auto mt-5 mb-5 pb-5" width = "25%">
+        <!-- Name input -->
+    <h2 class="d-flex justify-content-center" style="color:rgb(209, 7, 7)">Feedback</h2>
+    <p class=" d-flex justify-content-center mt-3 mb-5 pb-5">Help us improve better!</p>
+      <div class="form-outline mb-4 text-white d-flex justify-content-center">
+        <input autocomplete="off" type="text" id="form4Example1" class="form-control" name= "inputName"/>
+        <label class="form-label" for="form4Example1" style="opacity: 0.5;">Name</label>
+      </div>
+    
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input autocomplete="off" type="email" id="form4Example2" class="form-control" name= "inputEmail"/>
+        <label class="form-label" for="form4Example2" style="opacity: 0.5;">Email address</label>
+      </div>
+    
+      <!-- Message input -->
+      <div class="form-outline mb-4">
+        <textarea autocomplete="off" class="form-control" id="form4Example3" rows="4" name= "inputFeedback"></textarea>
+        <label class="form-label" for="form4Example3" style="opacity: 0.5;">Feedback</label>
+      </div>
+    
+      <!-- Checkbox -->
+      <!-- <div class="form-check d-flex justify-content-center mb-4">
+        <input
+          class="form-check-input me-2"
+          type="checkbox"
+          value=""
+          id="form4Example4"
+          checked
+        /> -->
+        <!-- <label class="form-check-label" for="form4Example4">
+          Send me a copy of this message
+        </label> -->
+      <!-- </div> -->
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary btn-block mt-5" style="background-color:rgb(209, 7, 7); width: 25%; ">Send</button>
+      </div>
+      
+    </div>
+    
+  
+    <!-- Submit button -->
+    
+  </form>
+
+
+
+
+<%- include('partials/footer') %>
